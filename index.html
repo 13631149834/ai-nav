@@ -562,6 +562,87 @@
         .hidden {
             display: none !important;
         }
+
+        /* 使用场景标签 */
+        .tool-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .tag-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2rem;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        /* 适合人群标签 */
+        .tag-audience {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        /* 使用门槛标签 */
+        .tag-level-easy {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .tag-level-advanced {
+            background: #ffedd5;
+            color: #c2410c;
+        }
+
+        /* 收费情况标签 */
+        .tag-price-free {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        .tag-price-trial {
+            background: #f3e8ff;
+            color: #9333ea;
+        }
+
+        .tag-price-paid {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        /* 语言支持标签 */
+        .tag-lang-zh {
+            background: #cffafe;
+            color: #0e7490;
+        }
+
+        .tag-lang-en {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+
+        .tag-lang-both {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        /* 使用方式标签 */
+        .tag-method {
+            background: #e2e8f0;
+            color: #475569;
+        }
+
+        /* 标签图标 */
+        .tag-icon {
+            font-size: 0.65rem;
+        }
     </style>
 </head>
 <body>
@@ -638,6 +719,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">OpenAI开发的强大AI对话模型，支持文章写作、代码生成、翻译润色等多种任务，是目前最流行的AI写作工具之一。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">👥</span>通用</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">文章写作</span>
@@ -656,6 +744,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">Anthropic公司开发的AI助手，擅长长文本分析和创意写作，支持长达200K token的上下文窗口，适合长篇文章创作。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">👥</span>通用</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">长文本</span>
@@ -674,6 +769,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">专为中文用户打造的AI写作平台，提供文章润色、改写扩写、语法检查等功能，助你写出高质量中文内容。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">中文优化</span>
@@ -692,6 +795,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">集成在Notion笔记软件中的AI功能，可以自动续写、总结、翻译笔记内容，是知识管理的好帮手。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">笔记</span>
@@ -710,6 +821,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">面向职场人士的AI写作工具，支持工作总结、述职报告、计划方案等多种职场文档的智能生成。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💼</span>销售</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">职场</span>
@@ -728,6 +847,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">清华大学团队开发的AI表达工具，根据你的想法找到恰当的词语和句子，让表达更加精准优美。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">措辞</span>
@@ -756,6 +883,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">基于Discord的AI绘画工具，以其出色的艺术风格和创意表现力著称，适合生成海报、插画、概念艺术等。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">艺术</span>
@@ -774,6 +909,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">开源的AI绘画模型，支持本地部署和自定义训练，拥有庞大的社区和丰富的模型资源。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">开源</span>
@@ -792,6 +935,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">OpenAI开发的AI图像生成工具，能够准确理解复杂提示词，生成高质量、符合描述的图片作品。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">高画质</span>
@@ -810,6 +961,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">百度推出的AI绘画平台，中文界面，操作简单，支持多种绘画风格，适合国内用户使用。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">中文</span>
@@ -828,6 +987,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">提供中文界面的Midjourney服务，国内用户可以直接使用，无需翻墙，中文提示词自动翻译。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">中文</span>
@@ -846,6 +1013,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">阿里巴巴推出的AI绘画工具，专注电商设计场景，支持商品图生成、海报设计等电商相关功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">电商</span>
@@ -874,6 +1049,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">百度开发的国产大语言模型，中文理解能力强，支持对话、问答、创作等多种场景，免费使用。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">👥</span>通用</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页+APP</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">免费</span>
@@ -892,6 +1074,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">阿里巴巴推出的AI助手，支持多轮对话、文案创作、代码编写等，功能持续更新优化中。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">👥</span>通用</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页+APP</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">免费</span>
@@ -910,6 +1099,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">科大讯飞推出的认知大模型，语音识别能力强，支持语音输入输出，适合语音交互场景。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💼</span>销售</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页+APP</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">语音</span>
@@ -928,6 +1125,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">月之暗面推出的AI助手，支持20万字超长上下文，擅长处理长文档分析和多轮对话。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">长文本</span>
@@ -946,6 +1151,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">清华大学和智谱AI联合开发的对话模型，支持知识问答、创意写作、代码生成等多种能力。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">👥</span>通用</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页+APP</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">知识</span>
@@ -964,6 +1176,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">阶跃星辰推出的AI助手，支持智能对话、知识问答、内容创作等功能，响应速度快。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">👥</span>通用</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">快速</span>
@@ -992,6 +1211,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">微软和GitHub联合开发的AI编程助手，集成在VS Code等IDE中，提供智能代码补全和建议。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">代码补全</span>
@@ -1010,6 +1236,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">专为AI协作设计的代码编辑器，基于VS Code内核，支持代码生成、编辑、调试全流程。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">编辑器</span>
@@ -1028,6 +1261,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">免费的AI代码补全插件，支持多种编程语言，兼容主流IDE，是Copilot的免费替代品。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">免费</span>
@@ -1046,6 +1287,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">阿里云推出的AI编程助手，支持代码补全、续写、注释生成等功能，免费提供给开发者使用。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">免费</span>
@@ -1064,6 +1312,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">亚马逊AWS推出的AI代码生成工具，支持实时代码建议和安全扫描，个人用户免费使用。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">安全</span>
@@ -1082,6 +1337,13 @@
                         </div>
                     </div>
                     <p class="tool-desc">专为程序员设计的AI搜索引擎，支持代码搜索、技术问答、bug诊断等开发相关功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">搜索</span>
@@ -1110,6 +1372,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">领先的AI视频生成平台，支持文生视频、图生视频、视频编辑等功能，是创意工作者的首选工具。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">文生视频</span>
@@ -1128,6 +1398,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">AI数字人视频生成平台，可以快速创建逼真的AI主播，适合营销视频和培训内容制作。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💼</span>销售</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">数字人</span>
@@ -1146,6 +1424,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">新兴的AI视频生成工具，操作简单，支持多种风格，一键生成精彩视频内容。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">简单</span>
@@ -1164,6 +1450,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">字节跳动推出的视频剪辑软件，内置AI功能，支持自动字幕、智能抠图、视频合成等。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">📱</span>APP+网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">剪辑</span>
@@ -1182,6 +1476,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">腾讯推出的在线视频剪辑平台，集成AI配音、字幕、剪辑等功能，支持数字人播报。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">云端</span>
@@ -1200,6 +1502,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">字节跳动推出的AI创作平台，支持图片和视频生成，操作简便，适合快速生成创意内容。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎨</span>设计</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">📱</span>APP+网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">创意</span>
@@ -1228,6 +1538,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">业界领先的AI语音合成平台，提供自然逼真的AI配音，支持多语言和多种音色选择。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-en"><span class="tag-icon">🌐</span>英文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">配音</span>
@@ -1246,6 +1564,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">微软Azure提供的文本转语音服务，支持多种语言和声音，音质优秀，企业级应用首选。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">💻</span>程序员</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🏢</span>企业</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">企业级</span>
@@ -1264,6 +1590,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">科大讯飞推出的语音识别服务，支持录音转文字、会议记录、字幕生成等功能，准确率高。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">📱</span>APP+网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">转写</span>
@@ -1282,6 +1616,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">强大的AI音乐生成工具，可以根据描述生成完整的歌曲，包括歌词、旋律和演唱。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-trial"><span class="tag-icon">💜</span>免费试用</span>
+                        <span class="tag-badge tag-lang-both"><span class="tag-icon">🌏</span>中英</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">作曲</span>
@@ -1300,6 +1642,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">国产AI歌声合成工具，支持多语言AI歌手，可以生成高质量的AI演唱音频。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">🎓</span>学生</span>
+                        <span class="tag-badge tag-level-advanced"><span class="tag-icon">🚀</span>进阶</span>
+                        <span class="tag-badge tag-price-free"><span class="tag-icon">🆓</span>免费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">💻</span>网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">歌声</span>
@@ -1318,6 +1668,14 @@
                         </div>
                     </div>
                     <p class="tool-desc">出门问问推出的AI配音平台，提供丰富的AI音色选择，支持文案转音频、视频配音等功能。</p>
+                    <div class="tool-tags">
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📝</span>自媒体</span>
+                        <span class="tag-badge tag-audience"><span class="tag-icon">📊</span>运营</span>
+                        <span class="tag-badge tag-level-easy"><span class="tag-icon">✨</span>新手友好</span>
+                        <span class="tag-badge tag-price-paid"><span class="tag-icon">💰</span>付费</span>
+                        <span class="tag-badge tag-lang-zh"><span class="tag-icon">🇨🇳</span>中文</span>
+                        <span class="tag-badge tag-method"><span class="tag-icon">📱</span>APP+网页</span>
+                    </div>
                     <div class="tool-footer">
                         <div class="tool-features">
                             <span class="feature-tag">配音</span>
